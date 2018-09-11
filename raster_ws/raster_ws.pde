@@ -1,5 +1,6 @@
 import frames.timing.*;
 import frames.primitives.*;
+import frames.core.*;
 import frames.processing.*;
 
 // 1. Frames' objects
@@ -36,12 +37,14 @@ void setup() {
   // on the frame instance (the one used to represent
   // onscreen pixels): upwards or backwards (or to the left
   // vs to the right)?
-  // Press ' ' to play it :)
+  // Press ' ' to play it
   // Press 'y' to change the spinning axes defined in the
   // world system.
   spinningTask = new TimingTask() {
+    @Override
     public void execute() {
-      spin();
+      scene.eye().orbit(scene.is2D() ? new Vector(0, 0, 1) :
+        yDirection ? new Vector(0, 1, 0) : new Vector(1, 0, 0), PI / 100);
     }
   };
   scene.registerTask(spinningTask);
@@ -57,7 +60,7 @@ void draw() {
   background(0);
   stroke(0, 255, 0);
   if (gridHint)
-    scene.drawGrid(scene.radius(), (int)pow( 2, n));
+    scene.drawGrid(scene.radius(), (int)pow(2, n));
   if (triangleHint)
     drawTriangleHint();
   pushMatrix();
@@ -71,12 +74,12 @@ void draw() {
 // Implement this function to rasterize the triangle.
 // Coordinates are given in the frame system which has a dimension of 2^n
 void triangleRaster() {
-  // frame.coordinatesOf converts from world to frame
+  // frame.location converts points from world to frame
   // here we convert v1 to illustrate the idea
   if (debug) {
     pushStyle();
     stroke(255, 255, 0, 125);
-    point(round(frame.coordinatesOf(v1).x()), round(frame.coordinatesOf(v1).y()));
+    point(round(frame.location(v1).x()), round(frame.location(v1).y()));
     popStyle();
   }
 }
@@ -101,13 +104,6 @@ void drawTriangleHint() {
   point(v2.x(), v2.y());
   point(v3.x(), v3.y());
   popStyle();
-}
-
-void spin() {
-  if (scene.is2D())
-    scene.eye().rotate(new Quaternion(new Vector(0, 0, 1), PI / 100), scene.anchor());
-  else
-    scene.eye().rotate(new Quaternion(yDirection ? new Vector(0, 1, 0) : new Vector(1, 0, 0), PI / 100), scene.anchor());
 }
 
 void keyPressed() {
