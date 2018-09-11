@@ -12,7 +12,7 @@ Emplee coordenadas baricéntricas para:
 2. Implementar un algoritmo de anti-aliasing para sus aristas; y,
 3. Hacer shading sobre su superficie.
 
-Implemente la función ```triangleRaster()``` del sketch adjunto para tal efecto, requiere la librería [frames](https://github.com/VisualComputing/framesjs/releases).
+Implemente la función ```triangleRaster()``` del sketch adjunto para tal efecto, requiere la librería [frames](https://github.com/VisualComputing/frames/releases).
 
 ## Integrantes
 
