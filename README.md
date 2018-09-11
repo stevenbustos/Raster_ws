@@ -30,5 +30,5 @@ Describa los resultados obtenidos. Qué técnicas de anti-aliasing y shading se 
 
 ## Entrega
 
-* Modo de entrega: [Fork](https://help.github.com/articles/fork-a-repo/) la plantilla en las cuentas de los integrantes (de las que se tomará una al azar).
-* Plazo: 1/4/18 a las 24h.
+* Modo de entrega: [Fork](https://help.github.com/articles/fork-a-repo/) la plantilla en las cuentas de los integrantes.
+* Plazo: 30/9/18 a las 24h.
