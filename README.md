@@ -8,15 +8,24 @@ Comprender algunos aspectos fundamentales del paradigma de rasterización.
 
 Emplee coordenadas baricéntricas para:
 
-1. Rasterizar un triángulo;
-2. Implementar un algoritmo de anti-aliasing para sus aristas; y,
-3. Hacer shading sobre su superficie.
+1. Rasterizar un triángulo; y,
+2. Sombrear su superficie a partir de los colores de sus vértices.
+
+Referencias:
+
+* [The barycentric conspiracy](https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/)
+* [Rasterization stage](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-stage)
+
+Opcionales:
+
+1. Implementar un [algoritmo de anti-aliasing](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-practical-implementation) para sus aristas; y,
+2. Sombrear su superficie mediante su [mapa de profundidad](https://en.wikipedia.org/wiki/Depth_map).
 
 Implemente la función ```triangleRaster()``` del sketch adjunto para tal efecto, requiere la librería [frames](https://github.com/VisualComputing/framesjs/releases).
 
 ## Integrantes
 
-Máximo 3.
+Dos, o si van a realizar al menos un opcional máximo tres.
 
 Complete la tabla:
 
@@ -26,7 +35,7 @@ Complete la tabla:
 
 ## Discusión
 
-Describa los resultados obtenidos. Qué técnicas de anti-aliasing y shading se exploraron? Adjunte las referencias. Discuta las dificultades encontradas.
+Describa los resultados obtenidos. En el caso de anti-aliasing describir las técnicas exploradas, citando las referencias.
 
 ## Entrega
 
