@@ -25,7 +25,7 @@ Implemente la función ```triangleRaster()``` del sketch adjunto para tal efecto
 
 ## Integrantes
 
-Dos, o si van a realizar al menos un opcional máximo tres.
+Dos, o máximo tres si van a realizar al menos un opcional.
 
 Complete la tabla:
 
