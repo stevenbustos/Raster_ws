@@ -38,17 +38,17 @@ Complete la tabla:
 Describa los resultados obtenidos. En el caso de anti-aliasing describir las técnicas exploradas, citando las referencias.
 
 ### Resultado
-![Resultados](images/result.png)
+![Resultados](raster_ws/images/result.png)
 
 ### Rasterizacion y sombreado de la superficie
 
-![Resultados](images/result1.png)
+![Resultados](raster_ws/images/result1.png)
 
 Primero se obtiene la rasterizacion del triangulo y el coloreado segun los colores de los vertices con la tecnica de shadding de las coordenadas baricentricas.
 
 ### Anti-aliasing
 
-![Resultados](images/result2.png)
+![Resultados](raster_ws/images/result2.png)
 
 Por ultimo se aplica la tecnica de [anti-aliasing](https://learnopengl.com/Advanced-OpenGL/Anti-Aliasing).
 
